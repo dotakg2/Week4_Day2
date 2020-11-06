@@ -1,4 +1,4 @@
-import functools
+# import functools
 
 # Task 2
 
@@ -77,3 +77,68 @@ import functools
 #     print(False)
 
 
+# Task 10 
+
+# nums = [-1, 2, 3, 4, -5, 6, 7, -8, 9, 0, -2, 0, 14, -6, 0]
+
+# pos  = list(filter(lambda x : x > 0, nums))
+# neg  = list(filter(lambda x : x < 0, nums))
+# zero = list(filter(lambda x : x == 0, nums))
+
+# print (f'Положительные : {pos}')
+# print (f'Отрицательные : {neg}')
+# print (f'Нулей в списке : {len(zero)}')
+
+
+# Task 11
+
+
+# nums = [-1, 2, 3, 0, 4, -5, 0, 6, 7, -8, 9, 0]
+
+# new_nums = list(map(lambda x : -1 if x < 0 else 1 if x != 0 else 0, nums))
+
+# print(new_nums)
+
+
+# Task 12
+
+# nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+
+# def shift(steps = int(input ('Шаг сдвига : '))):
+#     if steps < 0:
+#          steps = abs(steps)
+#          for x in range(steps):
+#              nums.append(nums.pop(0))
+#     else:
+#          for x in range(steps):
+#             nums.insert(0, nums.pop())
+
+
+# shift()
+# print(nums)
+
+
+#Task 13
+
+
+# def reverseArray(a):
+#     return a [::-1]
+
+
+#Task 14 
+
+# def isBalanced(s):
+#     res = []
+#     brackets = { '{':'}', '(':')', '[':']' }
+
+#     for char in s :
+#         if char in ['{', '(', '['] :
+#             res.append(char)
+#         else:
+#             if res:
+#                 top = res.pop()
+#                 if brackets[top] != char :
+#                     return 'NO'
+#             else:
+#                 return "No"
+#     return "NO" if res else "YES"
